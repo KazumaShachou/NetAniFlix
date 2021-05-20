@@ -1,0 +1,39 @@
+:root{
+    --vermelho:#e50914;
+    --preto:#141414;
+}
+
+body{
+    background: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header .container{
+    display: flex; /*joga tudo para linha de cima*/
+    flex-direction: row; /*precisa declarar, ou então não muda nada*/
+    align-items: center; /*alinhar todos os menus, não alinha no centro da tela, e alinha de maneira vertcal*/
+    justify-content: space-between; /*para separar os textos de caixa diferentes, como o logo dos menus*/
+}
+
+header .logo {
+    margin-left: 5px; /*desgrudar logo do canto*/
+    color: var(--vermelho);
+    font-family: 'Ariel Black', 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+header nav a {
+    text-decoration: none; /*remove the line*/
+    color: #AAA;
+    margin-right: 10px; /*space of distance between words*/
+}
+
+header nav a:hover{  /*quando você passa o mouse, ele muda a cor do texto*/
+    color: #fff;
+}
