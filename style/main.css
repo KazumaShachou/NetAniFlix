@@ -2,10 +2,12 @@
     --vermelho:#e50914;
     --preto:#141414;
 }
-
+/*elemento base*/
 body{
     background: var(--preto);
     font-family: 'Times New Roman', Times, serif;
+    color: whitesmoke;
+    
 }
 
 * {
@@ -36,4 +38,26 @@ header nav a {
 
 header nav a:hover{  /*quando você passa o mouse, ele muda a cor do texto*/
     color: #fff;
+}
+
+/*parte principal da página*/
+
+.animeprincipal{
+    font-size: 16px;
+    background: linear-gradient(to right,#181818 10%,rgba(23,23,23,.98) 20%,rgba(23,23,23,.97) 25%,rgba(23,23,23,.95) 35%,rgba(23,23,23,.94) 40%,rgba(23,23,23,.92) 45%,rgba(23,23,23,.9) 50%,rgba(23,23,23,.87) 55%,rgba(23,23,23,.82) 60%,rgba(23,23,23,.75) 65%,rgba(23,23,23,.63) 70%,rgba(23,23,23,.45) 75%,rgba(23,23,23,.27) 80%,rgba(23,23,23,.15) 85%,rgba(23,23,23,.08) 90%,rgba(23,23,23,.03) 95%,rgba(23,23,23,0) 100%), url('../img/nogamenolife.jpg');
+    height: 400px;/*tamanho da imagem*/
+    background-size: cover;
+    display: flex;
+    flex-direction: column; /*normalizar de maneira vertical*/
+    justify-content: center;
+    align-items: flex-start; /*ele se refere a linha da esquerda para direita*/
+    
+}
+
+.animeprincipal .sinopse{
+    margin-bottom: 50px;
+}
+
+.titulo {
+    font-size: 40px;
 }
